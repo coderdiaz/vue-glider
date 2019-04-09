@@ -1,0 +1,76 @@
+{
+  "name": "vue-glider",
+  "version": "0.1.0-beta.0",
+  "productName": "Vue Glider",
+  "description": "A Vue wrapper of Glider.js",
+  "author": {
+    "name": "Javier Diaz Chamorro",
+    "email": "hello@coderdiaz.me",
+    "url": "https://coderdiaz.me"
+  },
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "bili",
+    "lint": "eslint -c .eslintrc.js . --ext .js,.vue",
+    "test:unit": "jest --passWithNoTests",
+    "prepare": "yarn lint && yarn test:unit && yarn build"
+  },
+  "main": "dist/vue-glider.cjs.js",
+  "module": "dist/vue-glider.esm.js",
+  "unpkg": "dist/vue-glider.js",
+  "jsdelivr": "dist/vue-glider.js",
+  "cdn": "dist/vue-glider.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderdiaz/vue-glider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coderdiaz/vue-glider/issues"
+  },
+  "keywords": [
+    "vue",
+    "pagination",
+    "vuejs",
+    "paginate",
+    "tiny",
+    "vue-component",
+    "small",
+    "vue-carousel",
+    "vue-slider",
+    "carousel",
+    "slider",
+    "component"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  },
+  "dependencies": {
+    "glider-js": "^1.6.5",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.7.1",
+    "bili": "^4.7.3",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "husky": "^1.3.1",
+    "jest": "^24.7.1",
+    "jest-serializer-vue": "^2.0.2",
+    "jest-transform-stub": "^2.0.0",
+    "node-sass": "^4.9.0",
+    "rollup-plugin-vue": "^4.7.2",
+    "vue-jest": "^3.0.4",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
